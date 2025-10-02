@@ -44,7 +44,7 @@ export const deletePokemonModel = async (id: number): Promise<boolean> => {
 
 export const getPokemonById = async (id: number): Promise<Pokemon | null> => {
     const result = await query(
-        'SELECT * FROM pokemons WHERE id = ?',
+        'SELECT * FROM pokemons WHERE id = $1',
         [id]
     );
     return result.rows[0] || null;

@@ -29,7 +29,7 @@ describe('Pokemons Model', () => {
 
             const result = await getPokemonById(1);
             expect(result).toEqual(mockPokemon);
-            expect(query).toHaveBeenCalledWith('SELECT * FROM pokemons WHERE id = ?', [1]);
+            expect(query).toHaveBeenCalledWith('SELECT * FROM pokemons WHERE id = $1', [1]);
         });
 
         it('should return null when pokemon does not exist', async () => {
@@ -37,7 +37,7 @@ describe('Pokemons Model', () => {
 
             const result = await getPokemonById(999);
             expect(result).toBeNull();
-            expect(query).toHaveBeenCalledWith('SELECT * FROM pokemons WHERE id = ?', [999]);
+            expect(query).toHaveBeenCalledWith('SELECT * FROM pokemons WHERE id = $1', [999]);
         });
     });
 
