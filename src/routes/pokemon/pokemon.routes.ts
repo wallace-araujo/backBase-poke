@@ -11,7 +11,7 @@ import {
 const routes: ServerRoute[] = [
     {
         method: 'POST',
-        path: '/pokemons',
+        path: '/',
         handler: createPokemon,
         options: {
             description: 'Create a new Pokémon',
@@ -26,7 +26,7 @@ const routes: ServerRoute[] = [
     },
     {
         method: 'PUT',
-        path: '/pokemons/{id}',
+        path: '/{id}',
         handler: updatePokemon,
         options: {
             description: 'Update Pokémon trainer',
@@ -43,7 +43,7 @@ const routes: ServerRoute[] = [
     },
     {
         method: 'DELETE',
-        path: '/pokemons/{id}',
+        path: '/{id}',
         handler: deletePokemon,
         options: {
             description: 'Delete a Pokémon',
@@ -57,7 +57,7 @@ const routes: ServerRoute[] = [
     },
     {
         method: 'GET',
-        path: '/pokemons/{id}',
+        path: '/{id}',
         handler: getPokemon,
         options: {
             description: 'Get Pokémon details',
@@ -71,7 +71,7 @@ const routes: ServerRoute[] = [
     },
     {
         method: 'GET',
-        path: '/pokemons',
+        path: '/',
         handler: getAllPokemons,
         options: {
             description: 'Get all Pokémons',

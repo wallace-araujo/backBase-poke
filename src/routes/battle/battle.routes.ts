@@ -7,7 +7,7 @@ import {
 const routes: ServerRoute[] = [
     {
         method: 'POST',
-        path: '/batalhar/{pokemonAId}/{pokemonBId}',
+        path: '/{pokemonAId}/{pokemonBId}',
         handler: battlePokemons,
         options: {
             description: 'Battle between two pokémons',
