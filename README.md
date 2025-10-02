@@ -1,13 +1,11 @@
 # Projeto API - Hapi.js
 
-Este projeto foi desenvolvido utilizando **Hapi.js**, um framework Node.js maduro e modularizado, com foco em escalabilidade e boas práticas.  
-O objetivo é fornecer uma API bem estruturada, com documentação acessível e arquitetura organizada.
-**[https://hapi.dev/](https://hapi.dev/)**
+Este projeto foi desenvolvido utilizando **Hapi.js**, um framework Node.js maduro e modularizado, com foco em escalabilidade e boas práticas.
 ---
 
 ## 📚 Documentação da API
 Após iniciar o projeto, a documentação estará disponível em:  
-**[http://localhost:3000/documentation](http://localhost:3000/documentation)**
+**[https://pokemon-test.6e6ujk.easypanel.host/documentation](https://pokemon-test.6e6ujk.easypanel.host/documentation)**
 
 ---
 
