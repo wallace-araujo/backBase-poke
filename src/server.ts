@@ -12,7 +12,7 @@ dotenv.config()
 export const init = async () => {
   const server: Server = new Server({
     port: process.env.NODE_ENV === 'test' ? 0 : process.env.PORT,
-    host: 'localhost',
+    host: '127.0.0.1',
     routes: {
       cors: {
         origin: ['*'],
