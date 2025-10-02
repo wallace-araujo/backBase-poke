@@ -7,7 +7,7 @@
     "dev": "nodemon --watch 'src/**/*' -e ts,json --exec 'ts-node' src/server.ts",
     "migrate": "ts-node src/migrations/migrations.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
+    "start": "node dist/server.js",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:unit": "NODE_ENV=test jest tests/unit",
     "test:integration": "NODE_ENV=test jest tests/integration"
